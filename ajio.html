@@ -1,0 +1,654 @@
+<!doctype html>
+<html>
+    <head>
+        <title>AJIO</title>
+        <style>
+            .mySlides {display: none;}
+            #i1{
+                margin:0;
+                float:left;
+                margin-left:200px;
+            }
+            a:hover{
+                color:black;
+                font-weight:700;
+            }
+            .c1{
+                text-decoration:none;
+                padding:0px 10px;
+                font-size:13px;
+                color:#36454F;
+                display:inline-block;
+                font-family: "Lucida Console", "Courier New", monospace;
+                float:right;
+            }
+            .c1:hover{
+                text-decoration:underline;
+                color:blue;
+                font-weight:normal;
+            }
+            .c2{
+                text-decoration:none;
+                background-color:black;
+                color:white;
+                padding:6px 7px;
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+            .c2:hover{
+                font-weight:800;
+                color:white;
+            }
+            .c3{
+                text-decoration:none;
+                font-size:15px;
+                padding:15px 10px;
+                float:right;
+                color:black;
+                border: none;
+                outline: none;
+                background-color:inherit;
+                margin:0;
+            }
+            .c4{
+                padding:5px 3px;
+                border-radius:20px;
+                margin-top:10px;
+                height:15px;
+                width:180px;
+                background-image:url('https://tse4.mm.bing.net/th?id=OIP.U73iKD-A08tJcg-WIwJbWQHaHo&pid=Api&P=0');
+                background-size: 20px 20px; 
+                background-repeat: no-repeat;
+                background-color:#fff8dc;
+                background-position:155px 3px;
+                border:1px solid black;
+            }
+            .c3:hover{
+                font-weight:700;
+                font-size:medium;
+                
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+           .c5:hover{
+                transition : width 2s;
+                width:103%;
+                transition-duration: 1s;
+                transition-timing-function: linear;
+           } 
+           .slideshow-container {
+                max-width: 100;
+                position: relative;
+                margin: auto;
+            }
+            .fade{
+                animation-duration:3s;
+            }
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .c6{
+                width:24%;
+                display:inline-block;
+                
+            }
+            .c7{
+                
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+       }
+            
+            .c7:hover{
+                transition : width 2s;
+                width:101%;
+                height:101%;
+                display:inline-block;
+                transition-duration: 4s;
+                transition-timing-function: linear;
+            }
+            
+            .c12:hover{
+                transition : width 2s;
+                width:95%;
+                transition-duration: 4s;
+                transition-timing-function: linear;
+            }
+            .c8{
+                display:inline-block;
+                width:33%;
+            }
+            .c01{
+                display:block;
+                margin-left:auto;
+                margin-right: auto;
+            }
+            .c9{
+                display:inline-block;
+                width:33%;
+                color:white;
+            }
+            .dropdown-content, .dropdown-content1, .dropdown-content2 , .dropdown-content3, .dropdown-content4{
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+                z-index: 1;
+                border-radius:20px;
+            } 
+            .dropdown:hover .dropdown-content{
+                display: block;
+                margin:60px 100px;
+                width:80%;
+            }  
+            .dropdown1:hover .dropdown-content1{
+                display: block;
+                margin:60px 100px;
+                width:80%;
+            }  
+            .dropdown2:hover .dropdown-content2{
+                display: block;
+                margin:60px 100px;
+                width:80%;
+            }       
+            .dropdown3:hover .dropdown-content3{
+                display: block;
+                margin:60px 100px;
+                width:80%;
+            } 
+            .dropdown4:hover .dropdown-content4{
+                display: block;
+                margin:60px 100px;
+                width:80%;
+            }  
+            .b1{
+                border-top:2px solid black;
+                box-shadow: 4px 0px 3px;
+            }           
+        </style>
+    </head>
+    <body>
+        <div style=" box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+            <div style="display:inline-block;float:left;width:40%;">
+                <img id='i1' src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="ajio" width="150" height="80">
+            </div>
+            <div>
+            <div style="float:right;display:inline-block;width:60%;">
+                <a href="#" class="c1 c2">Visit AJIOLUXE</a>
+                <a href="#" class="c1">Customer Care</a>
+                <a href="#" class="c1">Sign in / Join AJIO</a>     
+            </div>
+            <div>
+                <a href="#" ><img class="c3" style="padding-top:7px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnY6058vpwe1LF1LLhjrCkzya7s910J_Y7g&usqp=CAU" alt="cart" width="30" height="30"> </a>
+                <a href="#" ></a><img class="c3" style="padding-top:7px;" src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="heart" width="30" height="30"> </a>
+                <input class="c3 c4" type="text" placeholder="search">
+                <div class="dropdown">
+                    <button class="c3 dropdown" >HOME AND KITCHEN</button>
+                    <div class="dropdown-content">
+                        <div>
+                            <button class="c3 dropdown" style="float:left;" >CATEGORIES</button>
+                            <br><br>
+                            <table cellpadding="10px">
+                                <tr>
+                                    <th>CLOTHING</th>
+                                    <th>WESTERN WEAR</th>
+                                    <th>ACCESSORIES</th>
+                                    <th>FEATURED</th>
+                                </tr>
+                                <tr>
+                                    <td>Footwear</td>
+                                    <td>Jackets & coats</td>
+                                    <td>Backpacks</td>
+                                    <td>Bags under 1499</td>
+                                </tr>
+                                <tr>
+                                    <td>Accessories</td>
+                                    <td>jeans</td>
+                                    <td>Bags & wallets</td>
+                                    <td>Footwear under 1499</td>
+                                </tr>
+                                <tr>
+                                    <td>international brands</td>
+                                    <td>Shirts</td>
+                                    <td>Belts</td>
+                                    <td>Jeans under 1199</td>
+                                </tr>
+                                <tr>
+                                    <td>Winterwear</td>
+                                    <td>Shorts & 3/4ths</td>
+                                    <td>Caps & hats</td>
+                                    <td>Shorts & 3/4ths under 699</td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>  
+                </div>
+                <div class="dropdown1">
+                    <button class="c3 dropdown1" >INDIE</button>
+                    <div class="dropdown-content1">
+                        <div>
+                            <button class="c3 dropdown1" style="float:left;" >CATEGORIES</button>
+                            <br><br>
+                            <table cellpadding="10px">
+                                <tr>
+                                    <th>NEW IN: CLOTHING</th>
+                                    <th>HOME</th>
+                                    <th>REGIONAL SPECIALITIES</th>
+                                    <th>FEATURED BRANDS</th>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: SAREES</th>
+                                    <td>bed sheets</td>
+                                    <td>Ajrak</td>
+                                    <td>Indie Picks</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: JEWELLERY</th>
+                                    <td>Cushions And Covers</td>
+                                    <td>Bagh</td>
+                                    <td>Swadesh</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: FOOTWEAR & ACCS</th>
+                                    <td>Curtains</td>
+                                    <td>Bagru</td>
+                                    <td>Fabindia</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: HOME</th>
+                                    <th>FASHION JEWELLERY</th>
+                                    <td>Chanderi & maheshwari</td>
+                                    <td>Pothys</td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>  
+                </div>
+                <div class="dropdown2">
+                    <button class="c3 dropdown2" >KIDS</button>
+                    <div class="dropdown-content2">
+                        <div>
+                            <button class="c3 dropdown2" style="float:left;" >CATEGORIES</button>
+                            <br><br>
+                            <table cellpadding="10px">
+                                <tr>
+                                    <th>NEW IN: CLOTHING</th>
+                                    <th>BOYS</th>
+                                    <th>GIRLS</th>
+                                    <th>SHOP BY AGE</th>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: FOOTWEAR & ACCS</th>
+                                    <td>Denimns and trousers</td>
+                                    <td>Dresses & Frocks</td>
+                                    <td>2-5 years</td>
+                                </tr>
+                                <tr>
+                                    <th>INNERWEAR & SLEEPWEAR</th>
+                                    <td>Shirts</td>
+                                    <td>Jeans & jeggings</td>
+                                    <td>5-10 years</td>
+                                </tr>
+                                <tr>
+                                    <th>TOYS & BABYCARE</th>
+                                    <td>T-shirts</td>
+                                    <td>Skirts & Shorts</td>
+                                    <td>10-14 years</td>
+                                </tr>
+                                <tr>
+                                    <th>COLLECTIONS</th>
+                                    <td>Outerwear</td>
+                                    <td>Leggings</td>
+                                    <td>14 and above</td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>  
+                </div>
+                <div class="dropdown3">
+                    <button class="c3 dropdown1" >WOMEN</button>
+                    <div class="dropdown-content3">
+                        <div>
+                            <button class="c3 dropdown3" style="float:left;" >CATEGORIES</button>
+                            <br><br>
+                            <table cellpadding="10px">
+                                <tr>
+                                    <th>NEW IN: CLOTHING</th>
+                                    <th>HOME</th>
+                                    <th>REGIONAL SPECIALITIES</th>
+                                    <th>FEATURED BRANDS</th>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: SREES</th>
+                                    <td>Frocks and Skirts</td>
+                                    <td>Leggings</td>
+                                    <td>Sarees</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: JEWELLERY</th>
+                                    <td>Jeans</td>
+                                    <td>T-shirts</td>
+                                    <td>Jackets & Coats</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: FOOTWEAR & ACCS</th>
+                                    <td>Kurtas</td>
+                                    <td>Dress material</td>
+                                    <td>Dupattas</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: BEAUTY</th>
+                                    <th>FASHION JEWELLERY</th>
+                                    <td>Watches</td>
+                                    <td>sandles</td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>
+                     
+                </div>
+                <div class="dropdown4">
+                    <button class="c3 dropdown4" >MEN</button>
+                    <div class="dropdown-content4">
+                        <div>
+                            <button class="c3 dropdown4" style="float:left;" >CATEGORIES</button>
+                            <br><br>
+                            <table cellpadding="10px">
+                                <tr>
+                                    <th>NEW IN: CLOTHING</th>
+                                    <th>HOME</th>
+                                    <th>REGIONAL SPECIALITIES</th>
+                                    <th>FEATURED BRANDS</th>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: SHIRTS</th>
+                                    <td>Jackets & Coats</td>
+                                    <td>Jeans</td>
+                                    <td>Shirts</td>
+                                </tr>
+                                <tr>
+                                    <th>ALL THATS NEW</th>
+                                    <td>Trousars</td>
+                                    <td>pants</td>
+                                    <td>T-shirts</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: FOOTWEAR & ACCS</th>
+                                    <td>Watches</td>
+                                    <td>Shoes</td>
+                                    <td>Belts</td>
+                                </tr>
+                                <tr>
+                                    <th>NEW IN: HOME</th>
+                                    <td>Sports shoes</td>
+                                    <td>Socks</td>
+                                    <td>track pants</td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>  
+                </div>                          
+            </div>
+            </div>  
+            
+        </div>
+        <div>
+            <img  class="c5 b1" src="https://assets.ajio.com/cms/AJIO/WEB/20052022-D-unisex-72hrsweekend-lastday.jpg" alt="image" width="100%" >
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-topbanner-REVISED22322.jpg" style="width:100%">
+             
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="https://assets.ajio.com/cms/AJIO/WEB/22052022-D-unisex-topbanner-p2-72hrsspecial-flat70.jpg" style="width:100%">
+             
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="https://assets.ajio.com/cms/AJIO/WEB/22052022-D-unisex-topbanner-p3-brands-4060.jpg" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/22052022-D-unisex-topbanner-p4-brands-startingat299.jpg" style="width:100%">
+               
+              </div>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+            </div>
+            <div>
+                <img  class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-offers-5instantdiscodunt.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img  class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-freedel-notiming.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img  class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/20052022-D-unisex-deals-header.jpg" alt="image" width="100%" >
+            </div>
+            <div style="background-color:aquamarine;width:100%;display:flex;">
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-unmissablebrands-campus-upto601.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-unmissablebrands-aks-5070.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-letsgoglobal-levis.jpg" alt="image" >
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-letsgoglobal-nike.jpg" alt="image">
+                </div>
+            </div>
+            
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-discoveronlinestores-ajiogold.jpg" alt="image" width="100%" >
+            </div> 
+            <div>
+                <img  class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-accessories-Header.jpg" alt="image" width="100%" >
+            </div>
+            <div style="background-color:white;">
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-discoveronlinestores-TRENDS.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-discoveronlinestores-Indie.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-discoveronlinestores-Home.jpg" alt="image" >
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-discoveronlinestores-Jewellery.jpg" alt="image">
+                </div>
+            </div>
+            <div>
+                <img  class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/D-Header_1440x905.jpg" alt="image" width="100%" >
+            </div>
+            <div style="background-color:#FCE883;">
+                <div class="c6">
+                    <img class="c07" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-beauty-makeup.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c07" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-beauty-fragrances.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c07" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-beauty-facebodycare.jpg" alt="image" >
+                </div>
+                <div class="c6">
+                    <img class="c07" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-beauty-cleansers.jpg" alt="image">
+                </div>
+            </div>
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-boldestbrands-andamen.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img  class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-home-Header.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <div class="c6">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-home-indie.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-home-home-centre.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-home-raymond.jpg" alt="image" >
+                </div>
+                <div class="c6">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/13052022-D-unisex-home-furnishings.jpg" alt="image">
+                </div>
+            </div>
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/HDFC-10instantdiscount-1440x128-without%20CTA.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img class="c5" src="https://assets.ajio.com/cms/AJIO/WEB/1609-D-discoveronlinestores-GOLD.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-5AJIOpoints.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/1609-D-brandsinthespotlight-header.jpg" alt="image" width="100%" >
+            </div>
+            <div style="background-color:rgb(253, 149, 14);">
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/D-celebsection-internationalbrands.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/D-celebsection-denims.jpg" alt="image">
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/D-celebsection-ethnicwear.jpg" alt="image" >
+                </div>
+                <div class="c6">
+                    <img class="c7" src="https://assets.ajio.com/cms/AJIO/WEB/D-celebsection-athleisure.jpg" alt="image">
+                </div>
+            </div>
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/1609-D-Trendscarousel-accessories.jpg" alt="image" width="100%" >
+            </div>
+            <div>
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/08032022-D-unisex-ajiocares-strip.jpg" alt="image" width="100%" >
+            </div>
+            <div style="display:inline-block;width:100%;">
+                <div class="c8">
+                <img class="c01" src="https://tse2.mm.bing.net/th?id=OIP.4FSdbTRg8iqRku_xXV-KUQHaHw&pid=Api&P=0&w=162&h=170" alt="cart" width="50" height="60">
+                <p style="text-align:center;"><b>EASY EXCHANGE</b></p>
+                </div>
+                <div  class="c8">
+                <img class="c01" src="https://tse3.mm.bing.net/th?id=OIP.SA9EM3lKqoa1scUax90G_gHaGu&pid=Api&P=0&w=215&h=196" alt="hand" width="60" height="60">
+                <p style="text-align:center;"><b>100% HANDPICKED</b></p>    
+                </div>
+                <div  class="c8">
+                <img  class="c01" src="https://tse4.mm.bing.net/th?id=OIP.Fp4lPbUM59n5gB6O9Y4ynAHaHa&pid=Api&P=0&w=157&h=157" alt="set" width="70" height="70">
+                <p style="text-align:center;"><b>ASSURED QUALITY</b></p>
+                </div>
+            </div>
+            <div style="display:inline-block;background-color:#333333;width:100%;">
+                <div>
+                    <table cellpadding="5px" style="color:white;margin-left:auto;margin-right:auto;padding:40px 0px;border-spacing: 140px 0;">
+                        <tr>
+                            <td><b>Ajio</b></td>
+                            <td><b>Shop by</b></td>
+                            <td><b>Help</b></td>
+                        </tr>
+                        <tr>
+                            <td>Who we are</td>
+                            <td>Track your order</td>
+                            <td>Men</td>
+                        </tr>
+                        <tr>
+                            <td>Join our team</td>
+                            <td>Questions</td>
+                            <td>Women</td>
+                        </tr>
+                        <tr>
+                            <td>terms & conditions</td>
+                            <td>Returns</td>
+                            <td>Kids</td>
+                        </tr>
+                        <tr>
+                            <td>We respect your Privacy</td>
+                            <td>Cancellations</td>
+                            <td>Indie</td>
+                        </tr>
+                        <tr>
+                            <td>Fees & Payments</td>
+                            <td>Payments</td>
+                            <td>Stores</td>
+                        </tr>
+                        <tr>
+                            <td>returns & refunds</td>
+                            <td>Customer Care</td>
+                            <td>New arrivals</td>
+                        </tr>
+                        <tr>
+                            <td>Promotions & terms & conditions</td>
+                            <td>How do I redeem my coupen</td>
+                            <td>Home</td>
+                        </tr>
+                    </table>
+                </div>
+               <div style="display:inline-block;width:100%;">
+                <h3 style="color:white;text-align:center;">FOLLOW US ON</h3>
+                <div class="c9">
+                <img style="border-radius:30px;" class="c01" src="https://tse2.mm.bing.net/th?id=OIP.tozpIBHbVCdArjene99JiAD5D6&pid=Api&P=0&w=161&h=161" alt="cart" width="60" height="60">
+                <p style="text-align:center;"><b>Facebook</b></p>
+                </div>
+                <div  class="c9">
+                <img style="border-radius:40px;" class="c01" src="https://tse3.mm.bing.net/th?id=OIP.B2jAIMD6FXO4S_32ZdNBtwHaHW&pid=Api&P=0&w=157&h=156" alt="hand"  width="60" height="60">
+                <p style="text-align:center;"><b>Instagram</b></p>    
+                </div>
+                <div  class="c9">
+                <img style="border-radius:45px;" class="c01" src="https://tse1.mm.bing.net/th?id=OIP.l-F_aSUNT7Md4aR1KiO1RQHaHa&pid=Api&P=0&w=158&h=158" alt="set" width="60" height="60">
+                <p style="text-align:center;"><b>Twitter</b></p>
+                </div>
+                </div>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+    </body>
+</html>    
